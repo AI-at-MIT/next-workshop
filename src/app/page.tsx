@@ -5,7 +5,7 @@ function MyPage() {
   const [inputText, setInputText] = useState('');
   const [processedText, setProcessedText] = useState('');
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputText(e.target.value);
   };
 
